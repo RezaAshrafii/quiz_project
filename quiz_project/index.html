@@ -1,12 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz_Project</title>
+    <title>quiz_project</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script type="module" src="/main.js"></script>
+    <h1>Match Memory</h1>
+    <div class="container">
+      <div id="game-board"></div>
+      <div>
+        <div id="scoreboard">
+          <h2>جدول امتیازات</h2>
+          <table id="score-table">
+            <thead>
+              <tr>
+                <th>نام</th>
+                <th>امتیاز</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- امتیازات اینجا نمایش داده می‌شوند -->
+            </tbody>
+          </table>
+        </div>
+        <div class="btns">
+          <button id="clear-scores">پاک کردن جدول امتیازات</button>
+          <button id="reset-game">شروع بازی جدید</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

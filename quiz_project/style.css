@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+*{
+  font-family: "Vazirmatn", sans-serif !important;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  text-align: center;
+  background-color: #13162b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container{
+  padding: 0 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 30px;
+}
+
+#game-board img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: .5rem;
+}
+
+#scoreboard {
+  margin-top: 20px;
+}
+
+#score-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#score-table th, #score-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.btns{
+  margin-top: 1rem;
+}
+button {
+  flex: 1 0;
+  padding: 15px 0;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 4px solid #0087ff;
+  color: #0087ff;
+  background-color: #fff;
+  padding: .5rem 1rem;
+}
+
+/* اضافه کردن یک انیمیشن چرخش به تصاویر */
+.flip-card {
+  transform: rotateY(360deg);
+}
+
+.flip-card-back {
+  transform: rotateY(0deg);
+}
+
+img {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  backface-visibility: hidden;
+  position: relative;
+}
